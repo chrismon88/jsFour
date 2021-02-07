@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Name Submission</title>
+</head>
+
+<body>
+
+
+<p>Please enter text to add to the list</p>
+
+<input id="new-text" ></input>
+<button id ="save-text">Add</button>
+<button id ="clear-text">Clear</button>
+<!--empty unordered list-->
+<ul id="list-of-text"></ul>
+
+
+
+<script>
+    // write script here
+    let textInput =document.querySelector('#new-text') // Select text box
+    let addButton= document.querySelector('#save-text') // select button
+    let listEntered = document.querySelector('#list-of-text') //list
+    let clearButton =document.querySelector('#clear-text')
+
+    let elementsInList = 0 // tracks number of items in list // setting element at 0
+    let maxElements = 10 // max allowed
+
+    document. addEventListener('keyup', function (){
+        if (event.keyCode == 13){
+            addButton.click() // click the addButton if user presses enter key
+        }
+    })
+    addButton.addEventListener('click', function () {
+        // read the text in the input
+        let newText = textInput.value
+
+        if (newText.length == 0) { //validates the users has entered some text
+            alert('Please enter text')
+            return
+        }
+
+        else if (newText.length >=50){
+            alert('Text is too long please keep it under 50 characters.')
+            return
+        }
+
+        if (elementsInList >= maxElements){ // check the max is not exceeded
+            alert('no more elements can be added')
+            return
+        }
+        //console.log(newText)
+        //create new li elements
+        let newListItem=document.createElement('li')
+        // li elements text should be the text from the input
+        newListItem.innerHTML =newText
+        //add ul as child of th li
+        listEntered.appendChild(newListItem)
+        //clear the text
+        textInput.value = ''
+        elementsInList++ // adding new elements to list
+
+        clearButton. addEventListener('click', function (){
+            listEntered.innerHTML = ''
+            elementsInList = 0
+
+        })
+    })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b575a449-aad2-421c-8ed0-05eb2a4a2b4e" name="Default Changelist" comment="was having trouble reading values from student list" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1o7eHCAyxzVo9aexkxYetuSKMWB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b575a449-aad2-421c-8ed0-05eb2a4a2b4e" name="Default Changelist" comment="" />
+      <created>1612641966308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612641966308</updated>
+      <workItem from="1612641967747" duration="1053000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="was having trouble reading values from student list" />
+    <option name="LAST_COMMIT_MESSAGE" value="was having trouble reading values from student list" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="127" key="FileChooserDialogImpl" timestamp="1612667674414">
+      <screen x="1920" y="-148" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="127" key="FileChooserDialogImpl/0.0.1536.824/1920.-148.1920.1040@1920.-148.1920.1040" timestamp="1612667674414" />
+    <state x="2472" y="105" key="Vcs.Push.Dialog.v2" timestamp="1612667788650">
+      <screen x="1920" y="-148" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="105" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.-148.1920.1040@1920.-148.1920.1040" timestamp="1612667788650" />
+    <state x="2697" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612667768261">
+      <screen x="1920" y="-148" width="1920" height="1040" />
+    </state>
+    <state x="2697" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.-148.1920.1040@1920.-148.1920.1040" timestamp="1612667768261" />
+  </component>
+</project>
