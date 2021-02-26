@@ -76,35 +76,41 @@
         - remove all of the elements with the class="selected" from the list.
     */
 
-    //let = []
+// creating variables
     let addButton = document.querySelector('#add-student')
-    let clearButton=document.querySelector('#remove-selected-students')
+    let clearButton =document.querySelector('#remove-selected-students')
     let enteredNameElement=document.querySelector('#student-name')
     let studentIdElement=document.querySelector('#student-id')
     let studentGpaElement=document.querySelector('#student-gpa')
     let studentCountElement=document.querySelector('#student-count')
-    let counter = 0
-    studentCountElement.innerHTML = counter // display span counter
     let studentListE1 = document.querySelector('#student-list')
+    let elementsInList = 0
 
-    // reading text entered
+    // reading text entered and saving them once clicked or enter is pressed
+    document. addEventListener('keyup', function (){
+        if (event.keyCode == 13){
+            addButton.click()
+        }
+    })
     addButton.addEventListener('click', function () {
-        //create a new li element
-
 
         let studentName = enteredNameElement.value
         let studentId = studentIdElement.value
         let studentGpa = studentGpaElement.value
-        // let newListItem=
+// create new li element
+     let newListItem = document.createElement('li')
+
+        newListItem.innerHTML = studentName,studentId,studentGpa
 
 
+// checking input validation
         if (studentName.length < 1) {
             alert('Please enter name')
         }
         else if (studentId.length <1) {
             alert('Please enter a valid student ID')
         }
-        else if (studentGpa.length <1 || studentGpa >5 || studentGpa <0) {
+        else if (studentGpa.length <1 || studentGpa >4 || studentGpa <0) {
             alert('Please enter a valid GPA between 0-4')
         }
         else {
@@ -112,10 +118,10 @@
             studentList.id = "list"
 
             studentList.innerHTML = `${studentName}, ID: ${studentId}, GPA:  ${studentGpa}`
-            counter++
-            studentCountElement.innerHTML = counter
+            elementsInList ++
+            studentCountElement.innerHTML = elementsInList // display span counter
             studentListE1.appendChild(studentList)
-            newListItem.addEventListener('click', function () {
+           newListItem.addEventListener('click', function () {
                 this.classList.toggle('selected')
                 studentName .value=""
                 studentId .value=""
@@ -126,19 +132,11 @@
 
     })
 
-    let studentList = document.querySelector('#student-list')
-    studentList.appendChild(newListItem)
-
-    let clearButton = document.querySelector('button')
-    clearButton.addEventListener('click', function (){
-        let elementsToDelete = document.querySelectorAll('.delete-me')
-        elementsToDelete.forEach(function (element){
-            element.remove()
+// clearing values in list
+            clearButton.addEventListener('click', function () {
+            studentListE1.innerHTML = ''
         })
 
-        listEntered.innerHTML = ''
-        elementsInList = 0
-    })
 
 </script>
 
